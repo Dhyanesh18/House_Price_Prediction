@@ -10,3 +10,7 @@ Docker containerization and deployment on Render has been done recently.
 
 ### Link of the hosted web page:
 https://house-price-prediction-huue.onrender.com/
+
+### Snapshot of the deployed website
+
+![image](https://github.com/user-attachments/assets/edf4fa99-b35b-4806-9ed6-68400c9ec633)
