@@ -55,6 +55,11 @@
 	z-index: 2;
 }
 
+.form {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 h2 {
 	font-size: 18px;
 	margin-bottom: 8px;
@@ -111,15 +116,11 @@ h2 {
 }
 
 .img {
-    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: url("backgroundimage.jpg");
 	background-repeat: no-repeat;
     background-size: auto;
     background-size:100% 100%;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(15px);
+    filter: blur(3px);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -130,4 +131,55 @@ h2 {
 
 body, html {
     height: 100%;
+}
+
+/* Add this to your existing CSS */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.form {
+    max-width: 400px;
+    width: 90%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    color: white;
+    margin: 0 auto;
+}
+
+.area, .location, .submit, .result {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.switch-field {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.area, .location, .submit, .result {
+    width: 100%; /* Changed from 76% to use full form width */
+    margin: 0 0 15px 0; /* Adjusted margin */
+}
+
+/* Optional: Add smooth transition for hover effects */
+.submit {
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: #8bc34a;
+    cursor: pointer;
 }
