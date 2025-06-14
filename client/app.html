@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangalore Home Price Prediction</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
@@ -9,8 +11,9 @@
 <body>
     <div class="img"></div>
     <form class="form">
+        <h1 style="text-align: center;">Bangalore Housing Price Predictor</h1>
         <h2>Area (Square Feet)</h2>
-        <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+        <input class="area" type="number" id="uiSqft" name="Squareft" value="1000" min="100" max="50000" step="1">
         
         <h2>BHK</h2>
         <div class="switch-field">
@@ -41,10 +44,9 @@
         </div>
         
         <h2>Location</h2>
-        <select class="location" name="" id="uiLocations">
-            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-            <option>Electronic City</option>
-            <option>Rajaji Nagar</option>
+        <select class="location" id="uiLocations" required>
+            <option value="" disabled selected>Choose a Location</option>
+            <!-- Options will be populated by JavaScript -->
         </select>
         
         <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
